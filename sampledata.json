@@ -1,14 +1,4 @@
-import { Component } from '@angular/core';
-
-
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
-})
-export class AppComponent {
-  private sampleSegment: any = {
+{
     "id": "6a96244d-cf01-43ac-adc4-f43e731694c9",
     "name": "Present on Saturday 12th ",
     "segmentType": "ALL",
@@ -62,9 +52,7 @@ export class AppComponent {
                     "from": "1531371600000",
                     "to": "1531458000000"
                 }
-            ],
-            "segments": [],
-            "hidden": false
+            ]
 
         }],
         "hidden": false
@@ -73,5 +61,5 @@ export class AppComponent {
 "hidden": false
 }
 
-  title = 'RecursiveComponents';
-}
+
+

@@ -1,0 +1,19 @@
+<div class="card" [formGroup]="group">
+  <div class="card-header">
+    SEGMENT
+    <button type="button" class="btn btn-danger float-right" (click)="deleteSegment()">Delete Segment</button>
+  </div>
+  <div class="card-body">
+      <segment *ngFor="let childSegment of segments.controls; let segmentIndex=index" [group]="getSegmentGroup(segmentIndex)">
+        </segment>
+        <ng-container *ngFor="let field of filters.controls; let filterIndex=index"
+          dynamicFilterItem [group]="getFilterGroup(filterIndex)">
+        </ng-container>
+      </div>
+  <div class="card-footer">
+    <div class="btn-group btn-group-sm">
+    <button type="button" class="btn btn-success" (click)="addSegment()">Add Segment</button>
+    <button type="button" class="btn btn-success" (click)="addFilter()">Add Filter</button>
+    </div>
+  </div>
+</div>

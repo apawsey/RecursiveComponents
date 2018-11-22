@@ -1,0 +1,9 @@
+<div>
+  <form (ngSubmit)="onSubmit()" [formGroup]="form">
+    <segment [group]="form" style="width:50%"></segment>
+ </form>
+
+ <div>
+   <pre>Form Value: {{form.value | json}}</pre>
+ </div>
+</div>
